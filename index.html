@@ -2,29 +2,49 @@
 <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <a-scene>
   <a-assets>
-    <a-asset-item id="my-gltf" src="model.gltf"></a-asset-item>
-    <a-asset-item id="clock" src="clock.gltf"></a-asset-item>
-    <a-asset-item id="flower" src="flower.gltf"></a-asset-item>
+    
+    <!-- credit Justin Randall https://poly.google.com/view/6RTxFfhkDpN-->
+    <a-asset-item id="room" src="model.gltf"></a-asset-item>
+    
+    <!-- credit Alex "SAFFY" Safayan https://poly.google.com/view/7480RWv0tx7-->
+    <a-asset-item id="clock" src="models/clock/model.gltf"></a-asset-item>
+    
+    <!-- credit Michael Pretz https://poly.google.com/view/8VeRiN0OmMO-->
+    <a-asset-item id="flower" src="models/flower/model.gltf"></a-asset-item>
+  
+    <!-- credit Cormac White https://poly.google.com/view/8jExwEzwPAe-->
+    <a-asset-item id="theatre" src="models/theatre/model.gltf"></a-asset-item>
+
   </a-assets>
 
   <a-entity camera look-controls wasd-controls position="0 1.6wd 3"></a-entity>
 
   <a-sky color="#82ccd7"></a-sky>
 
- <!-- <a-entity id="my-model"
+ <a-entity id="room-model"
     scale="1 1 1"
-    position="0 3 0"
+    position="0 3.5 0"
     rotation="0 0 0"
-    gltf-model="#my-gltf"></a-entity>-->
+    gltf-model="#room"></a-entity>
+  
+  <a-entity id="theatre-model"
+    scale="4 4 4"
+    position="-1.834 -2.532 -13.392"
+    rotation="0 90 0"
+    gltf-model="#theatre"></a-entity>
+  
+  
   <a-entity id="clock-model"
-    scale="7 7 7"
-    position="0 3 0"
-    rotation="0 0 0"
+    scale="1 1 1"
+    position="-3.797 -.750 4"
+    rotation="0 108.020 0"
     gltf-model="#clock"></a-entity>
+  
+  
   <a-entity id="flower-model"
     scale="1 1 1"
-    position="0 3 0"
-    rotation="0 0 0"
+    position="3.838 0.418 1.577"
+    rotation="2.320 -78.570 0"
     gltf-model="#flower"></a-entity>
 
 </a-scene>
